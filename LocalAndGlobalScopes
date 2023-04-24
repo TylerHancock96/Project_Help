@@ -10,7 +10,7 @@ and variables saved are considered to be rewriting functions that are considered
 
 Example of what I'm saying since this might sound like I'm complicating things:
 
-rpsGame.py
+file name = rpsGame.py
 // this is considered a global variable since it's not being called
     name = ''
 
