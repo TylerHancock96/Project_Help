@@ -1,0 +1,21 @@
+// When learning about Local and Global Scopes the book talks about how local scopes are destroyed once a function is called
+discussing running programs (page 65), '... When the function returns, the local scope is destroyed, and these variables are forgotten.'
+if this is the case, why are you able to call a function multiple times within a program if the variables are destroyed after being called?
+I know when a program is being made, you can call the function within the program as many times as you want, but why would the local variables be destroyed?
+Wouldn't I want the variables to stay around so they can be called multiple times? The concept of scopes being destroyed after being called confuses me.
+
+I may have answered my own question.
+Only variables that aren't saved within the function are destroyed since they're considered to be within the 'local scope'
+and variables saved are considered to be rewriting functions that are considered within the 'global scope'.
+
+Example of what I'm saying since this might sound like I'm complicating things:
+
+rpsGame.py
+// this is considered a global variable since it's not being called
+    name = ''
+
+// this is calling the global variable and is making it a local variable since it's being altered
+    while name != 'your name':
+    print('Please type your name.'
+    name = input()
+print('Thank you!')
